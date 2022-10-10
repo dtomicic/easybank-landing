@@ -1,3 +1,7 @@
+.dtNavAll {
+    display: none;
+}
+
 .mobileNavTop {
     padding: 25px;
     display: flex;
@@ -39,5 +43,93 @@
     top: 15%; /* 20 when open */
 }
 
+
+@media screen and (min-width: 768px) {
+    .mobileNavTop {
+        display: none;
+    }
+
+    .dtNavAllLeft {
+        display: block;
+        top: 5px;
+    }
+
+    .dtNavAllLeftImage:hover {
+        cursor: pointer;
+        width: 20%;
+    }
+
+    .dtNavAll {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        font-family: 'Public sans';
+    }
+
+    .dtNavAllMid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dtNavAllMidList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        color: hsl(233, 8%, 62%);
+    }
+
+    .dtNavAllMidListItem:hover {
+        cursor: pointer;
+        color: rgb(180, 179, 179)
+    }
+
+    .dtNavAllRight {
+        background: linear-gradient(113deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%, rgba(43,183,218,1) 100%);
+        padding: 15px 25px;
+        border-radius: 25px;
+        color: white;
+        transition: ease-in-out .3s;
+    }
+
+    .dtNavAllRight:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .dtNavAll {
+        padding: 30px 65px;
+    }
+
+    .dtNavAllMidList {
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .dtNavAllRight {
+        padding: 15px 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dtNavAll {
+        padding: 30px 115px;
+    }
+
+    .dtNavAllMidList {
+        gap: 65px;
+        font-size: 20px;
+    }
+
+    .dtNavAllRight {
+        padding: 15px 55px;
+        font-size: 20px;
+    }
+}
 
 
