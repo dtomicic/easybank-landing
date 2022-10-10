@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={headerStyles.header}>
         <div className={headerStyles.headerBg}>
-            <Image src={mockups} className={headerStyles.headerImage} />
+            <Image src={mockups} className={headerStyles.headerImage}/>
         </div>
         <div className={headerStyles.main}>
             <h2 className={headerStyles.mainHeader}>Next generation digital banking</h2>

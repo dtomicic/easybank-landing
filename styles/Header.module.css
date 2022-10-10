@@ -50,3 +50,68 @@
     transition: ease-in-out .3s;
     margin-top: 15px;
 }
+
+.mainInvite:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .headerBg{
+        background: url('../public/images/bg-intro-desktop.svg');
+        background-size: cover;
+        max-width: 765px;
+    }
+
+    .headerImage {
+        left: 100px!important;
+    }
+
+    .main {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .mainInvite {
+        text-align: center;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        margin-left: 60px;
+        max-width: unset;
+    }
+    .mainHeader {
+        font-size: 55px;
+    }
+
+    .mainInfo {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mainHeader {
+        font-size: 80px;
+        max-width: 630px;
+    }
+    .mainInfo {
+        font-size: 30px;
+        line-height: 42px;
+        max-width: 600px;
+    }
+    .mainInvite {
+        padding: 20px 0 20px 0;
+        font-size: 22px;
+        max-width: 320px;
+    }
+}
