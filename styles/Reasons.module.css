@@ -1,0 +1,113 @@
+.reasonsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Public sans';
+}
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin-top: 30px;
+    max-width: 319px;
+}
+
+.header {
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    width: 50%;
+    font-size: 28px;
+}
+
+.info {
+    margin-top: -5px;
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 40px 0;
+    gap: 35px;
+    max-width: 373px;
+}
+
+.bottomSectionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.bottomSectionCardHeader {
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(233, 26%, 24%);
+}
+
+.bottomSectionCardInfo {
+    text-align: center;
+    font-size: 14px;
+    color: hsl(233, 8%, 62%);
+    line-height: 22px;
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .topSection {
+        max-width: unset;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .header {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 652px;
+    }
+
+    .bottomSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        max-width: unset;
+    }
+
+    .bottomSectionCard {
+        width: 40%;
+        align-items: flex-start;
+        max-width: 308px;
+    }
+
+    .bottomSectionCardInfo {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bottomSectionCardHeader {
+        font-size: 30px;
+    }
+
+    .bottomSectionCardInfo {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
