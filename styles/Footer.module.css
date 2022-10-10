@@ -1,0 +1,127 @@
+.footerAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 26%, 24%);
+    padding-top: 30px;
+    font-family: 'Public sans';
+}
+
+.footerAllLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerAllLeftFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.footerAllLeftFirstSocials {
+    display: flex;
+    gap: 15px;
+}
+
+.footerAllLeftSecond {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(0, 3%, 88%);
+}
+
+.footerAllLeftSecondTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerAllLeftSecondBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;    
+}
+
+.footerAllLeftSecondList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerAllRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.footerAllRightBtn {
+    background: linear-gradient(113deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%, rgba(43,183,218,1) 100%);
+    padding: 15px 45px;
+    border-radius: 25px;
+    color: white;
+    transition: ease-in-out .3s;
+    font-weight: 700;
+}
+
+.footerAllRightCopyright {
+    color: hsl(233, 8%, 62%);
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .footerAll {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 35px 35px 35px;
+    }
+
+    .footerAllLeft {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .footerAllLeftFirst {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footerAllLeftSecond {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        gap: 100px;
+    }
+
+    .footerAllLeftSecondList {
+        margin: 0;
+    }
+
+    .footerAllLeftSecondBottom {
+        margin-top: 0;
+    }
+
+    .footerAllRight {
+        margin: 0;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .footerAllRightBtn {
+        font-size: 14px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+}
