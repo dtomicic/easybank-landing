@@ -1,0 +1,43 @@
+.mobileNavTop {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.mobileNavTopLeft {
+    display: flex;
+}
+
+.mobileNavBottom {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    position: absolute;
+    top: -50%; /* 20 when open */
+    left: 8%;
+    border-radius: 5px;
+    padding: 20px 0 20px 0;
+    font-family: 'Public Sans', sans-serif;
+    transition: ease-in-out .3s;
+}
+
+.mobileNavBottomList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.toggleNav {
+    top: 15%; /* 20 when open */
+}
+
+
+
