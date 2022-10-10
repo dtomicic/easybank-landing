@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerBg {
+    background: url('../public/images/bg-intro-mobile.svg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.headerImage {
+    top: -200px!important;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    font-family: 'Public sans';
+    margin: -80px 0 20px 0;
+    max-width: 318px;
+}
+
+.mainHeader {
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.mainInfo {
+    color: hsl(233, 8%, 62%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+.mainInvite {
+    background: linear-gradient(113deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%, rgba(43,183,218,1) 100%);
+    padding: 15px 25px;
+    border-radius: 25px;
+    width: 65%;
+    color: white;
+    transition: ease-in-out .3s;
+    margin-top: 15px;
+}
