@@ -16,37 +16,37 @@ const Footer = () => {
                 <div className={footerStyles.footerAllLeftFirst}>
                     <Image src={logo} />
                     <div className={footerStyles.footerAllLeftFirstSocials}>
-                        <Image src={fb} />
-                        <Image src={yt} />
-                        <Image src={tw} />
-                        <Image src={pt} />
-                        <Image src={ig} />
+                        <Image src={fb} className={footerStyles.footerAllLeftFirstSocialsIcon}/>
+                        <Image src={yt} className={footerStyles.footerAllLeftFirstSocialsIcon}/>
+                        <Image src={tw} className={footerStyles.footerAllLeftFirstSocialsIcon}/>
+                        <Image src={pt} className={footerStyles.footerAllLeftFirstSocialsIcon}/>
+                        <Image src={ig} className={footerStyles.footerAllLeftFirstSocialsIcon}/>
                     </div>
                 </div>
                 <div className={footerStyles.footerAllLeftSecond}>
                     <div className={footerStyles.footerAllLeftSecondTop}>
                         <ul className={footerStyles.footerAllLeftSecondList}>
                             <Link href='/about'>
-                                <li>About Us</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>About Us</li>
                             </Link>
                             <Link href='/contact'>
-                                <li>Contact</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>Contact</li>
                             </Link>
                             <Link href='/blog'>
-                                <li>Blog</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>Blog</li>
                             </Link>
                         </ul>
                     </div>
                     <div className={footerStyles.footerAllLeftSecondBottom}>
                         <ul className={footerStyles.footerAllLeftSecondList}>
                             <Link href='/careers'>
-                                <li>Careers</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>Careers</li>
                             </Link>
                             <Link href='/support'>
-                                <li>Support</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>Support</li>
                             </Link>
                             <Link href='/privacy'>
-                                <li>Privacy Policy</li>
+                                <li className={footerStyles.footerAllLeftSecondLink}>Privacy Policy</li>
                             </Link>
                         </ul>
                     </div>
